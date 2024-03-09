@@ -1,0 +1,62 @@
+<!-- Below line defines this html as a child / extension of base.html -->
+{% extends "base.html" %}
+<!-- Below line overrides the 'title' block in base.html -->
+{% block title %}Signup{% endblock %}
+
+<!-- Below overrides the 'content' block in base.html -->
+{% block content %}
+<form method="POST">
+  <div class="form-group">
+    <h3 align="center">Signup</h3>
+    <label for="exampleInputEmail1">Email address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      aria-describedby="emailHelp"
+      placeholder="Enter email"
+      name="email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">First Name</label>
+    <input
+      type="fname"
+      class="form-control"
+      id="fname"
+      aria-describedby="fnameHelp"
+      placeholder="Enter first name"
+      name="fname"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      placeholder="Password"
+      name="password"
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="confirmPassword"
+      placeholder="Confirm password"
+      name="confirmPassword"
+    />
+  </div>
+  <div class="text-center">
+    <button
+      type="submit"
+      class="btn btn-success"
+      style="margin: 10px; width: 100px"
+    >
+      Sign up
+    </button>
+  </div>
+</form>
+{% endblock %}
