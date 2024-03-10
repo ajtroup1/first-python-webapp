@@ -19,7 +19,7 @@ def CreateApp():
 
     @login_manager.user_loader
     def load_user(id):
-        return User.query.get(int(id)) #authomatically looks for the primary key here
+        return User.query.get(int(id)) #automatically looks for the primary key here
 
     from .views import views #import blueprints. from FILE views.py import this variable "views = Blueprint('views', __name__)"
     from .auth import auth

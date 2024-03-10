@@ -6,6 +6,7 @@ class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     text = db.Column(db.String(10000))
     date = db.Column(db.DateTime(timezone=True), default=func.now())
+    complete = db.Column(db.Boolean, default=False)
     userID = db.Column(db.Integer, db.ForeignKey('user.id')) #define foreign key to associate each note with a user. here use lowercase first letter
 
 class User(db.Model, UserMixin):

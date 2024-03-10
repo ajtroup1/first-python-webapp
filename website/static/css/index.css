@@ -6,3 +6,39 @@
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.notes-container {
+  margin: 70px auto;
+  width: 80%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#notes-table {
+  width: 100%;
+  border-collapse: collapse; /* Ensure cells share borders */
+}
+
+#notes-table th,
+#notes-table td {
+  padding: 8px; /* Add some padding to cells for better readability */
+  border: 1px solid #ccc; /* Add borders to cells */
+  text-align: center; /* Center align content in all cells */
+}
+
+#notes-table th:first-child,
+#notes-table td:first-child {
+  width: 40%; /* Adjust width of first column (Note) */
+}
+
+#notes-table th:nth-child(2),
+#notes-table td:nth-child(2) {
+  width: 40%; /* Adjust width of second column (Date) */
+}
+
+#notes-table th:nth-child(3),
+#notes-table td:nth-child(3) {
+  width: 20%; /* Adjust width of third column (Comments) */
+}
